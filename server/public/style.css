@@ -176,6 +176,21 @@ main{
     color: #D46518;
 }
 
+.pdf-icon {
+    font-size: 24px;
+    color: #203864; /* สีแดง */
+    margin-left: 10px;
+}
+
+.pdf-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
 
 .button{
     text-align: center;
