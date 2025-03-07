@@ -1,0 +1,48 @@
+version: '3'
+services:
+  mysql:
+    container_name: mysql-db
+    image: mysql:latest
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: team-project
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./data:/docker-entrypoint-initdb.d
+
+  server:
+    image: node:latest
+    container_name: server
+    restart: always
+    working_dir: /app/server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/app/server # Mount โฟลเดอร์ server จาก Host เข้าไปใน Container
+    environment:
+      NODE_ENV: development
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: team-project
+      DB_USER: root
+      DB_PASSWORD: password
+    depends_on:
+      - mysql
+    command: sh -c "npm install && node server.js"
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - server
+    volumes:
+      - ./server/public:/usr/share/nginx/html
+
+volumes:
+  mysql-data:

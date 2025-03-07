@@ -1,0 +1,272 @@
+html,body{
+    font-family: "Noto Sans Thai";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: #203864;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: 2rem;
+    justify-content: space-between;
+}
+
+nav .kmitl-name{
+    position: relative;
+    left: 5%;
+}
+
+.login{
+    position: relative;
+    right: 6%;
+    color: white;
+}
+
+.white-nav{
+    color: #203864;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.white-nav a{
+    color: #203864;
+    position: relative;
+    right: 5%;
+}
+
+.menu-bar{
+    height: 2rem;
+    position: relative;
+    left: 3%;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: start;
+    align-items: center;
+}
+.ce-logo{
+    height: 5rem;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+    left: 19%;
+}
+
+.inner-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.inner-logo p{
+    position: relative;
+    left: 20%;
+}
+
+footer{
+    background-color: #203864;
+    color: #F79B5B;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    flex-basis : auto;
+}
+
+.center-footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.suggest{
+    width: 25%;
+}   
+
+.contact{
+    width: 25%;
+}
+
+footer p{
+    color: white;
+}
+
+.suggest a{
+    color: #F79B5B;
+}
+
+.contact .address{
+    color: #F79B5B;
+    font-size: 1.1rem;
+}
+
+.middle-footer-div{
+    width: 4%;
+}
+
+.topic{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.facebook{
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+}
+.facebook img{
+    height: 3rem;
+    margin-right: 20px;
+}
+
+.facebook p{
+    font-size: 1rem;
+}
+
+
+main{
+    background-color: #EEEEEE;
+    min-height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.main-content{
+    margin-left: 24vw;
+    width: 40%;
+    flex-grow: 1;
+}
+
+.in-main-div{
+    width: 70%;
+}
+
+.main-content h3{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #203864;
+}
+
+.main-content h4{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #D46518;
+}
+
+
+.button{
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left-button:hover{
+    border-top: 20px solid #203864;
+}
+.right-button:hover{
+    border-top: 20px solid #203864;
+}
+
+.left-button{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #D9D9D9;
+    margin: 2rem;
+    transform: rotate(90deg);
+}
+
+.right-button{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #D9D9D9;
+    margin: 2rem;
+    transform: rotate(-90deg);
+}
+
+
+.render{
+    text-align: start;
+}
+
+.render ul{
+    opacity: 60%;
+}
+
+.render h3{
+    color: black;
+}
+
+.side-bar ul{
+    padding: 0%;
+}
+
+.side-bar li{
+    list-style: none;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    padding-left: 2rem;
+}
+
+.side-bar a{
+    width: 100%;
+}
+
+.list li:hover{
+    background-color: #162746;
+}
+
+.side-bar{
+    position: absolute;
+    left: 0px;
+    background-color: #203864;
+    width: 20vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.close{
+    height: 1rem;
+}
+
+.close-container{
+    text-align: end;
+    padding: 10px;
+}
+
+.hide{
+    display: none;
+}
